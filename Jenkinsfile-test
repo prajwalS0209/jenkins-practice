@@ -1,8 +1,8 @@
 pipeline {
     agent any
-        stage('Test') {
+        stage('cloneing') {
             steps {
-                echo 'woeking fine ig..'
+               git branch: 'dev', credentialsId: 'bit-bucket', url: 'https://s11mani@bitbucket.org/analytticaproduct/access-management-service.git'
             }
         }
     }
